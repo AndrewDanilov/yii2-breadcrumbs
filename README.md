@@ -29,13 +29,13 @@ Usage
 
 ```php
 <?= andrewdanilov\breadcrumbs\Breadcrumbs::widget([
-	'templateWrapper' => '@frontend/views/site/breadcrumbs/wrapper',
-	'templateItem' => '@frontend/views/site/breadcrumbs/item',
-	'templateActiveItem' => '@frontend/views/site/breadcrumbs/active-item',
-	'showHome' => false, // default true
-	'homeLabel' => 'Main',
-	'homeUrl' => ['site/index'],
-	'microdata' => true, // default false
+	'templateWrapper' => '@frontend/views/site/breadcrumbs/wrapper', // optional
+	'templateItem' => '@frontend/views/site/breadcrumbs/item', // optional
+	'templateActiveItem' => '@frontend/views/site/breadcrumbs/active-item', // optional
+	'showHome' => false, // optional, default true
+	'homeLabel' => 'Main', // optional, default 'Main'
+	'homeUrl' => ['site/index'], // optional, default ['/']
+	'microdata' => true, // optional, default false
 	'items' => [
 		['label' => 'Category', 'url' => ['site/category']],
 		['label' => 'Subcategory', 'url' => ['site/subcategory']],
