@@ -35,7 +35,7 @@ Usage
 	'showHome' => false, // default true
 	'homeLabel' => 'Main',
 	'homeUrl' => ['site/index'],
-    'microdata' => true, // default false
+	'microdata' => true, // default false
 	'items' => [
 		['label' => 'Category', 'url' => ['site/category']],
 		['label' => 'Subcategory', 'url' => ['site/subcategory']],
