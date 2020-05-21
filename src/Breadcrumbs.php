@@ -31,7 +31,7 @@ class Breadcrumbs extends Widget
 	public $templateItem = '@andrewdanilov/breadcrumbs/views/item';
 	public $templateActiveItem = '@andrewdanilov/breadcrumbs/views/active-item';
 	public $showHome = true;
-	public $homeLabel = 'Главная';
+	public $homeLabel = 'Main';
 	public $homeUrl = ['/'];
 	public $microdata = false;
 	public $items = [];

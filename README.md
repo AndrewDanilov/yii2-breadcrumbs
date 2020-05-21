@@ -28,7 +28,7 @@ Usage
 -----
 
 ```php
-<?= andrewdanilov\menu\Breadcrumbs::widget([
+<?= andrewdanilov\breadcrumbs\Breadcrumbs::widget([
 	'templateWrapper' => '@frontend/views/site/breadcrumbs/wrapper',
 	'templateItem' => '@frontend/views/site/breadcrumbs/item',
 	'templateActiveItem' => '@frontend/views/site/breadcrumbs/active-item',
