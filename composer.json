@@ -1,8 +1,8 @@
 {
-    "name": "andrewdanilov/__repsitory_name__",
-    "description": "__repository_desc__",
+    "name": "andrewdanilov/yii2-breadcrumbs",
+    "description": "Breadcrumbs widget",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","__samplekey__"],
+    "keywords": ["yii2","extension","breadcrumbs"],
     "license": "MIT",
     "authors": [
         {
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "andrewdanilov\\__namespace__\\": "src/"
+            "andrewdanilov\\breadcrumbs\\": "src/"
         }
     }
 }
