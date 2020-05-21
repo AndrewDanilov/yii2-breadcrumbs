@@ -14,7 +14,7 @@ use yii\helpers\Url;
 		<a itemprop="item" href="<?= Url::to($url) ?>">
 			<span itemprop="name"><?= $label ?></span>
 		</a>
-		<span>&gt;</span>
+		<span class="divider">&gt;</span>
 		<meta itemprop="position" content="<?= $position ?>" />
 	</li>
 <?php } else { ?>
@@ -22,6 +22,6 @@ use yii\helpers\Url;
 		<a href="<?= Url::to($url) ?>">
 			<span><?= $label ?></span>
 		</a>
-		<span>&gt;</span>
+		<span class="divider">&gt;</span>
 	</li>
 <?php } ?>
