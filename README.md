@@ -44,4 +44,6 @@ Usage
 ]) ?>
 ```
 
-You can enable __schema.org__ microdata for breadcrumbs by setting `microdata` param to true.
+You can use own templates for breadcrumbs __wrapper__ element, __list items__ and __active list item__. Just copy example templates from __/vendor/andrewdanilov/yii2-breadcrumbs/views__ to your prefered directory. Modify them as you need and define correspond paths to their location: `templateWrapper`, `templateItem`, `templateActiveItem`.
+
+You can enable __schema.org__ microdata for breadcrumbs by setting `microdata` option to __true__.

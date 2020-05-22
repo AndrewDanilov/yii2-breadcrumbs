@@ -5,26 +5,8 @@ use yii\base\Widget;
 
 /**
  * Breadcrumbs
- *
- * Use:
- *  <?= andrewdanilov\menu\Breadcrumbs::widget([
- *		'templateWrapper' => '@frontend/views/site/breadcrumbs/wrapper',
- *		'templateItem' => '@frontend/views/site/breadcrumbs/item',
- *		'templateActiveItem' => '@frontend/views/site/breadcrumbs/active-item',
- *		'showHome' => false, // default true
- *		'homeLabel' => 'Main',
- *		'homeUrl' => ['site/index'],
- *      'microdata' => true,
- *		'items' => [
- *          ['label' => 'Category', 'url' => ['site/category']],
- *          ['label' => 'Subcategory', 'url' => ['site/subcategory']],
- *          ['label' => 'Product #1'], // or short ['Product #1']
- *      ],
- *  ]) ?>
- *
- * All parameters are optional.
+ * @link https://github.com/AndrewDanilov Documentation
  */
-
 class Breadcrumbs extends Widget
 {
 	public $templateWrapper = '@andrewdanilov/breadcrumbs/views/wrapper';
