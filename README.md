@@ -35,11 +35,12 @@ Usage
 	'showHome' => false, // optional, default true
 	'homeLabel' => 'Main', // optional, default 'Main'
 	'homeUrl' => ['site/index'], // optional, default ['/']
+	'showActiveItemUrl' => true, // optional, default false
 	'microdata' => true, // optional, default false
 	'items' => [
 		['label' => 'Category', 'url' => ['site/category']],
 		['label' => 'Subcategory', 'url' => ['site/subcategory']],
-		['label' => 'Product #1'], // or short ['Product #1']
+		'Product #1', // short form of ['label' => 'Product #1']
 	],
 ]) ?>
 ```

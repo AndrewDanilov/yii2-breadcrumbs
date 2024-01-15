@@ -15,6 +15,7 @@ class Breadcrumbs extends Widget
 	public $showHome = true;
 	public $homeLabel = 'Main';
 	public $homeUrl = ['/'];
+	public $showActiveItemUrl = false;
 	public $microdata = false;
 	public $items = [];
 
@@ -47,18 +48,21 @@ class Breadcrumbs extends Widget
 		if (is_string($lastItem)) {
 			$lastItem = ['label' => $lastItem];
 		}
-		unset($lastItem['url']);
+        if (!$this->showActiveItemUrl) {
+            unset($lastItem['url']);
+        }
 		array_push($this->items, $lastItem);
 
 		$out = [];
+        $last_index = count($this->items) - 1;
 		foreach ($this->items as $index => $item) {
 			if (is_array($item) && isset($item['label'])) {
 				$item['microdata'] = $this->microdata;
 				$item['position'] = $index + 1;
-				if (isset($item['url'])) {
-					$out[] = $this->render($this->templateItem, $item);
-				} else {
+				if ($index === $last_index) {
 					$out[] = $this->render($this->templateActiveItem, $item);
+				} else {
+					$out[] = $this->render($this->templateItem, $item);
 				}
 			}
 		}
