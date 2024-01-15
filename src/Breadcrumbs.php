@@ -16,6 +16,7 @@ class Breadcrumbs extends Widget
 	public $homeLabel = 'Main';
 	public $homeUrl = ['/'];
 	public $showActiveItemUrl = false;
+	public $hideIfSingleItem = true;
 	public $microdata = false;
 	public $items = [];
 
@@ -38,7 +39,7 @@ class Breadcrumbs extends Widget
 		if ($this->showHome) {
 			array_unshift($this->items, ['label' => $this->homeLabel, 'url' => $this->homeUrl]);
 		}
-		if (count($this->items) < 2) {
+		if ($this->hideIfSingleItem && count($this->items) < 2) {
 			return '';
 		}
 

@@ -36,6 +36,7 @@ Usage
 	'homeLabel' => 'Main', // optional, default 'Main'
 	'homeUrl' => ['site/index'], // optional, default ['/']
 	'showActiveItemUrl' => true, // optional, default false
+	'hideIfSingleItem' => false, // optional, default true. Hides widget if the only element presents in items array. If showHome is true, then home page counts as first element.
 	'microdata' => true, // optional, default false
 	'items' => [
 		['label' => 'Category', 'url' => ['site/category']],
